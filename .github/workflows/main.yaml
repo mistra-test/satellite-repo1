@@ -13,3 +13,9 @@ jobs:
         shell: bash
         run: |
           echo "Executing workflow of satellite 1"
+      - name: Trigger central repo WF
+        uses: convictional/trigger-workflow-and-wait@v1.6.1
+        with:
+          owner: mistra
+          repo: central-repo
+          github_token: ${{ secrets.CENTRAL_REPO_TOKEN }}
