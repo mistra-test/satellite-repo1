@@ -12,9 +12,9 @@ jobs:
       - name: Echo message
         shell: bash
         run: |
-          echo "Executing workflow of satellite 1"
+          echo "Executing workflow of satellite 1 "
       - name: Trigger central repo WF
-        uses: convictional/trigger-workflow-and-wait@v1.6.1
+        uses: convictional/trigger-workflow-and-wait@v1.6.5
         with:
           owner: mistra-test
           repo: central-repo
