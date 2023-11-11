@@ -8,6 +8,8 @@ on:
 jobs:
   trigger_workflow:
     runs-on: ubuntu-latest
-    shell: bash
-    run: |
-      echo "Executing workflow of satellite 1"
+    steps:
+      - name: Echo message
+        shell: bash
+        run: |
+          echo "Executing workflow of satellite 1"
