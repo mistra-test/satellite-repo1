@@ -19,3 +19,4 @@ jobs:
           owner: mistra
           repo: central-repo
           github_token: ${{ secrets.CENTRAL_REPO_TOKEN }}
+          workflow_file_name: main.yaml
